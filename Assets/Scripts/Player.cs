@@ -13,6 +13,8 @@ public class Player : MonoBehaviour
         velocity.x = Input.GetAxis("Horizontal");
         velocity.z = Input.GetAxis("Vertical");
 
+        if (Input.GetButtonDown("Jump")) velocity.y = 40;
+
         transform.position += velocity * speed * Time.deltaTime;
     }
 }
