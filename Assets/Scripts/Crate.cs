@@ -15,6 +15,6 @@ public class Crate : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         audioSource?.Play();
-        Debug.Log(collision.gameObject);
+        //Debug.Log(collision.gameObject);
     }
 }

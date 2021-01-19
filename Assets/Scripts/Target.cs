@@ -18,6 +18,7 @@ public class Target : MonoBehaviour
         {
             //add points to game
             Game.Instance.AddPoints(points);
+            Destroy(transform.parent.gameObject);
         }
     }
 }
