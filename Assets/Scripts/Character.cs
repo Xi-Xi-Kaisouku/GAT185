@@ -38,7 +38,7 @@ public class Character : MonoBehaviour
         if (inputDirection.magnitude > 0.1f)
         {
             //transform.forward = inputDirection.normalized;
-            Quaternion target = Quaternion.LookRotation(inputDirection.normalized);
+            Quaternion target = Quaternion.LookRotation(Direction.normalized);
             transform.rotation = Quaternion.Lerp(transform.rotation, target, 5 * Time.deltaTime);
 
         }
