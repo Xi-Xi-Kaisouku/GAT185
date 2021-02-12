@@ -3,12 +3,12 @@
     "maps": [
         {
             "name": "Player",
-            "id": "5c6e1c8e-faee-4e44-9111-878fb0309daf",
+            "id": "4bdd16f5-7714-4e5e-b16a-0721f28406b1",
             "actions": [
                 {
                     "name": "Jump",
                     "type": "Button",
-                    "id": "1ed92162-9e68-411a-84c0-d6f9603051f9",
+                    "id": "e2168d09-0829-47f3-90fb-4d548443a175",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -16,23 +16,7 @@
                 {
                     "name": "Move",
                     "type": "Value",
-                    "id": "475be77b-7904-407b-8b46-79fa4219cb95",
-                    "expectedControlType": "Vector2",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "Throw",
-                    "type": "Button",
-                    "id": "602cc1b4-4864-4c20-9155-0bca208ae5a1",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                },
-                {
-                    "name": "Punch",
-                    "type": "Button",
-                    "id": "a32670b0-c618-4311-8ad6-3b8e5a0c1989",
+                    "id": "d78c0cff-8320-4707-b5cb-ab332fe3f7ee",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
@@ -41,7 +25,7 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "827c1d67-69b4-4f09-8861-829ed371c8b2",
+                    "id": "16110731-e511-4adc-987d-e427972dc75e",
                     "path": "<Keyboard>/space",
                     "interactions": "",
                     "processors": "",
@@ -52,7 +36,7 @@
                 },
                 {
                     "name": "2D Vector",
-                    "id": "9fd8eb6b-8f0c-4c56-9084-090b2c869632",
+                    "id": "770903a1-2b94-4ee7-8eb3-a647c87d7d4b",
                     "path": "2DVector",
                     "interactions": "",
                     "processors": "",
@@ -63,7 +47,7 @@
                 },
                 {
                     "name": "up",
-                    "id": "0481b9c1-d936-459f-9245-322e7fc81c93",
+                    "id": "0c06087b-fffc-484a-bb4b-1dd1417c9d1d",
                     "path": "<Keyboard>/w",
                     "interactions": "",
                     "processors": "",
@@ -74,7 +58,7 @@
                 },
                 {
                     "name": "down",
-                    "id": "9edc17a9-7fb4-402d-9bf9-4aced1a019ef",
+                    "id": "9c2da86d-54ca-4882-a58c-285e7c77d2e3",
                     "path": "<Keyboard>/s",
                     "interactions": "",
                     "processors": "",
@@ -85,7 +69,7 @@
                 },
                 {
                     "name": "left",
-                    "id": "df26d942-e6a4-47b1-84ef-c409ff36141c",
+                    "id": "8d89c51f-7af3-4b72-896a-305fff4f0700",
                     "path": "<Keyboard>/a",
                     "interactions": "",
                     "processors": "",
@@ -96,7 +80,7 @@
                 },
                 {
                     "name": "right",
-                    "id": "b5bf7544-1cc1-48c6-9c80-25b0e2a3959c",
+                    "id": "3309db13-3c91-4df5-8bb8-35ce5e7e78e5",
                     "path": "<Keyboard>/d",
                     "interactions": "",
                     "processors": "",
@@ -104,28 +88,6 @@
                     "action": "Move",
                     "isComposite": false,
                     "isPartOfComposite": true
-                },
-                {
-                    "name": "",
-                    "id": "9af1ceab-9c61-4001-b355-4fb0c71287c9",
-                    "path": "<Mouse>/rightButton",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Throw",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "74c4a6c3-aa06-4d53-a6f5-50a9185443c4",
-                    "path": "<Keyboard>/f",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Punch",
-                    "isComposite": false,
-                    "isPartOfComposite": false
                 }
             ]
         }

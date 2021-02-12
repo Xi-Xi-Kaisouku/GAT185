@@ -29,6 +29,7 @@ public class Character : MonoBehaviour
             velocity.y = 0;
         }
 
+
         Quaternion cameraRotation = Camera.main.transform.rotation;
         Quaternion rotation = Quaternion.AngleAxis(cameraRotation.eulerAngles.y, Vector3.up);
         Vector3 Direction = rotation * inputDirection;
@@ -47,19 +48,19 @@ public class Character : MonoBehaviour
         animator.SetBool("OnGround", onGround);
         animator.SetFloat("VelocityY", velocity.y);
 
-        characterController.Move(inputDirection * speed * Time.deltaTime);
+        //characterController.Move(inputDirection * speed * Time.deltaTime);
 
         //gravity movement
         velocity.y += gravity * Time.deltaTime;
         characterController.Move(velocity * Time.deltaTime);
 
-        inputDirection = Vector3.zero;
+        
     }
 
     public void OnJump()
     {
         //jump
-        if (onGround)
+        if (characterController.isGrounded)
         {
             velocity.y += jump;
         }
@@ -78,8 +79,9 @@ public class Character : MonoBehaviour
     public void OnMove(InputValue input)
     {
         Vector2 v2 = input.Get<Vector2>();
+        inputDirection = Vector3.zero;
         inputDirection.x = v2.x;
-        inputDirection.y = v2.y;
+        inputDirection.z = v2.y;
 
     }
 }

@@ -7,7 +7,7 @@ public class CharacterCamera : MonoBehaviour
 {
     public Transform targetTransform;
     public Vector3 offset;
-    [Range(0, 120)]public float rate = 1;
+    [Range(0, 20)]public float rate = 1;
 
     void LateUpdate()
     {
