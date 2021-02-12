@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8010019481877964398}
+  - component: {fileID: 157027977092738051}
   - component: {fileID: 1823771720448664827}
   m_Layer: 0
   m_Name: AnimTarget
@@ -32,6 +33,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &157027977092738051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7483712011248682272}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a33c36a4e770054c93fcefa2d34ee46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destroyGameObject: {fileID: 7483712011248682272}
 --- !u!95 &1823771720448664827
 Animator:
   serializedVersion: 3
@@ -62,17 +76,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Target
       objectReference: {fileID: 0}
+    - target: {fileID: 4964708675353357201, guid: 41c84a0419fcbd540b6e8057f5b3add3, type: 3}
+      propertyPath: destroyGameObject
+      value: 
+      objectReference: {fileID: 7483712011248682272}
     - target: {fileID: 4964708675353357202, guid: 41c84a0419fcbd540b6e8057f5b3add3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.27
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4964708675353357202, guid: 41c84a0419fcbd540b6e8057f5b3add3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.12
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4964708675353357202, guid: 41c84a0419fcbd540b6e8057f5b3add3, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -2.57
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4964708675353357202, guid: 41c84a0419fcbd540b6e8057f5b3add3, type: 3}
       propertyPath: m_LocalRotation.x
