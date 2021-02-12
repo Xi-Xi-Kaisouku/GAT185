@@ -8,12 +8,12 @@ public class AnimEvents : MonoBehaviour
 
     private void Start()
     {
-        audioSource = GetComponent<AudioSource>();
+        //audioSource = GetComponent<AudioSource>();
     }
 
     public void OnFootsteps()
     {
-        //Debug.Log("Footstep");
-        audioSource.Play();
+        Debug.Log("Footstep");
+        //audioSource.Play();
     }
 }

@@ -44,11 +44,10 @@ public class Character : MonoBehaviour
 
         }
 
+        //animator
         animator.SetFloat("Speed", inputDirection.magnitude);
         animator.SetBool("OnGround", onGround);
         animator.SetFloat("VelocityY", velocity.y);
-
-        //characterController.Move(inputDirection * speed * Time.deltaTime);
 
         //gravity movement
         velocity.y += gravity * Time.deltaTime;
