@@ -58,7 +58,7 @@ public class Character : MonoBehaviour
 
         if (health.isActiveAndEnabled && health.health <= 0)
         {
-            //animator.SetTrigger("Death");
+            animator.SetTrigger("Death");
         }
     }
 
