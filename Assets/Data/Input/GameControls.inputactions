@@ -36,6 +36,22 @@
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": ""
+                },
+                {
+                    "name": "Yaw",
+                    "type": "Value",
+                    "id": "a540d374-3233-4099-89be-3a64a8b9dcea",
+                    "expectedControlType": "Axis",
+                    "processors": "Scale(factor=0.01)",
+                    "interactions": ""
+                },
+                {
+                    "name": "Pitch",
+                    "type": "Value",
+                    "id": "79b9b036-3dd8-4189-8a71-8b182048b025",
+                    "expectedControlType": "Axis",
+                    "processors": "Scale(factor=0.01),Invert",
+                    "interactions": ""
                 }
             ],
             "bindings": [
@@ -124,6 +140,28 @@
                     "processors": "",
                     "groups": "",
                     "action": "Throw",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "a6d31b45-7c94-4f04-815f-bc3e3581c19c",
+                    "path": "<Mouse>/delta/x",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Yaw",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "9c0ec1fa-bd6f-419d-97af-430c58fc9712",
+                    "path": "<Mouse>/delta/y",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Pitch",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

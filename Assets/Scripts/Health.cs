@@ -8,9 +8,11 @@ public class Health : MonoBehaviour
     public float healthMax;
     public float decay;
     public Slider slider;
+    public GameObject destroySpawnObject;
     public bool destroyOnDeath = false;
 
     public float health { get; set; }
+    public bool isDead { get; set; } = false;
 
     void Start()
     {
@@ -23,11 +25,15 @@ public class Health : MonoBehaviour
         if (slider != null)
         {
             slider.value = health / healthMax;
-
         }
 
-        if (health <= 0)
+        if (health <= 0 && !isDead)
         {
+            isDead = true;
+            if (destroySpawnObject != null)
+            {
+                Instantiate(destroySpawnObject, transform.position, transform.rotation);
+            }
             if (destroyOnDeath) GameObject.Destroy(gameObject);
         }
     }

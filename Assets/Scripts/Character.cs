@@ -64,7 +64,7 @@ public class Character : MonoBehaviour
 
     public void OnFire()
     {
-        weapon.Fire(transform.position);
+        weapon.Fire(transform.forward);
         //Debug.Log("OnFire");
     }
 
