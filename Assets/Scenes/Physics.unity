@@ -410,6 +410,18 @@ PrefabInstance:
       propertyPath: jump
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1965886136280489554, guid: 3e5d5f0d7c4f2484a94fc027d2f12e25, type: 3}
+      propertyPath: space
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965886136280489554, guid: 3e5d5f0d7c4f2484a94fc027d2f12e25, type: 3}
+      propertyPath: movement
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1965886136280489554, guid: 3e5d5f0d7c4f2484a94fc027d2f12e25, type: 3}
+      propertyPath: turnRate
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 1965886136280489555, guid: 3e5d5f0d7c4f2484a94fc027d2f12e25, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1399,6 +1411,9 @@ MonoBehaviour:
   decay: 0
   slider: {fileID: 0}
   destroySpawnObject: {fileID: 6746383485168582278, guid: 7cc8f24ae61e60942a500ae85fc510ef, type: 3}
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls: []
   destroyOnDeath: 0
 --- !u!1 &1092707181 stripped
 GameObject:
@@ -1437,6 +1452,9 @@ MonoBehaviour:
   decay: 0
   slider: {fileID: 0}
   destroySpawnObject: {fileID: 6746383485168582278, guid: 7cc8f24ae61e60942a500ae85fc510ef, type: 3}
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls: []
   destroyOnDeath: 0
 --- !u!1001 &1155333507
 PrefabInstance:
@@ -1744,6 +1762,9 @@ MonoBehaviour:
   decay: 0
   slider: {fileID: 0}
   destroySpawnObject: {fileID: 6746383485168582278, guid: 7cc8f24ae61e60942a500ae85fc510ef, type: 3}
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls: []
   destroyOnDeath: 0
 --- !u!1 &1904719314 stripped
 GameObject:
@@ -1796,6 +1817,9 @@ MonoBehaviour:
   decay: 0
   slider: {fileID: 0}
   destroySpawnObject: {fileID: 6746383485168582278, guid: 7cc8f24ae61e60942a500ae85fc510ef, type: 3}
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls: []
   destroyOnDeath: 0
 --- !u!1 &1919453386
 GameObject:
@@ -1897,6 +1921,8 @@ MonoBehaviour:
   targetTransform: {fileID: 987948928}
   offset: {x: 0, y: 3, z: -5}
   rate: 3
+  orientToTarget: 0
+  clampYaw: 0
 --- !u!114 &1919453391
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2044,6 +2070,9 @@ MonoBehaviour:
   decay: 0
   slider: {fileID: 0}
   destroySpawnObject: {fileID: 6746383485168582278, guid: 7cc8f24ae61e60942a500ae85fc510ef, type: 3}
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls: []
   destroyOnDeath: 0
 --- !u!1 &2124166862 stripped
 GameObject:
@@ -2105,6 +2134,9 @@ MonoBehaviour:
   decay: 0
   slider: {fileID: 0}
   destroySpawnObject: {fileID: 6746383485168582278, guid: 7cc8f24ae61e60942a500ae85fc510ef, type: 3}
+  deathEvent:
+    m_PersistentCalls:
+      m_Calls: []
   destroyOnDeath: 0
 --- !u!1001 &4978625749302199046
 PrefabInstance:
