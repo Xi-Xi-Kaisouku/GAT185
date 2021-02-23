@@ -186,7 +186,7 @@
                     "id": "a6d31b45-7c94-4f04-815f-bc3e3581c19c",
                     "path": "<Mouse>/delta/x",
                     "interactions": "",
-                    "processors": "Scale(factor=0.02)",
+                    "processors": "Scale(factor=0.03)",
                     "groups": "",
                     "action": "Yaw",
                     "isComposite": false,

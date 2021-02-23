@@ -1,27 +1,12 @@
 fileFormatVersion: 2
-guid: db4f5e8c4a4756e48806b52976ed94e7
+guid: b3cac71bca527e449af2b0ffa9429945
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: mixamo.com
-  externalObjects:
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Guard_02__diffuse
-    second: {fileID: 2800000, guid: 692e7371b41d3b849a10ddae2bfb1c7c, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Guard_02__normal
-    second: {fileID: 2800000, guid: 69870e42c2f90ca4ab0e546c2a4f9e12, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Guard_02__specular
-    second: {fileID: 2800000, guid: 01d6cfaa68a1a274a99430a00da16a87, type: 3}
+    second: Standing Melee Attack Downward
+  externalObjects: {}
   materials:
     materialImportMode: 1
     materialName: 0
@@ -41,14 +26,50 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Standing Melee Attack Downward
+      takeName: mixamo.com
+      internalID: 0
+      firstFrame: 0
+      lastFrame: 68
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 0
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 1
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events:
+      - time: 0.3741793
+        functionName: OnCreate
+        data: RightHand
+        objectReferenceParameter: {fileID: 4125482295258808846, guid: 3f3dbfdf1fad2d54abb5a999b891c9be, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 0
   meshes:
     lODScreenPercentages: []
@@ -90,11 +111,7 @@ ModelImporter:
     legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
-  referencedClips:
-  - cf1ccc23a051e78458d245b3e7f58cc8
-  - 277becf02d256a247b50cba60a44ca54
-  - b3cac71bca527e449af2b0ffa9429945
-  - 33bf4f0de42b7f14cada27a77673d4fe
+  referencedClips: []
   importAnimation: 1
   humanDescription:
     serializedVersion: 3
@@ -599,11 +616,11 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: db4f5e8c4a4756e48806b52976ed94e7, type: 3}
   autoGenerateAvatarMappingIfUnspecified: 1
   animationType: 3
   humanoidOversampling: 1
-  avatarSetup: 1
+  avatarSetup: 2
   additionalBone: 0
   userData: 
   assetBundleName: 
