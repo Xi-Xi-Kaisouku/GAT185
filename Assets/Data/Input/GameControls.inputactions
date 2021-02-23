@@ -42,7 +42,7 @@
                     "type": "Value",
                     "id": "a540d374-3233-4099-89be-3a64a8b9dcea",
                     "expectedControlType": "Axis",
-                    "processors": "Scale(factor=0.01)",
+                    "processors": "",
                     "interactions": ""
                 },
                 {
@@ -50,7 +50,23 @@
                     "type": "Value",
                     "id": "79b9b036-3dd8-4189-8a71-8b182048b025",
                     "expectedControlType": "Axis",
-                    "processors": "Scale(factor=0.01),Invert",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Distance",
+                    "type": "Value",
+                    "id": "c9164e9f-c0f2-4d7d-a0b0-7c359563291b",
+                    "expectedControlType": "Axis",
+                    "processors": "",
+                    "interactions": ""
+                },
+                {
+                    "name": "Center",
+                    "type": "Button",
+                    "id": "ddb30e77-cc88-4f06-bc62-6f7fffe155f5",
+                    "expectedControlType": "Button",
+                    "processors": "",
                     "interactions": ""
                 }
             ],
@@ -148,7 +164,7 @@
                     "id": "a6d31b45-7c94-4f04-815f-bc3e3581c19c",
                     "path": "<Mouse>/delta/x",
                     "interactions": "",
-                    "processors": "",
+                    "processors": "Scale(factor=0.02)",
                     "groups": "",
                     "action": "Yaw",
                     "isComposite": false,
@@ -159,9 +175,31 @@
                     "id": "9c0ec1fa-bd6f-419d-97af-430c58fc9712",
                     "path": "<Mouse>/delta/y",
                     "interactions": "",
-                    "processors": "",
+                    "processors": "Scale(factor=0.02),Invert",
                     "groups": "",
                     "action": "Pitch",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "ec75f0ff-8fb4-4ad3-8eda-08ea64b22b9c",
+                    "path": "<Mouse>/scroll/y",
+                    "interactions": "",
+                    "processors": "Scale(factor=0.01)",
+                    "groups": "",
+                    "action": "Distance",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fb573a30-56b5-4d40-a0b1-695267d3c564",
+                    "path": "<Mouse>/middleButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Center",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

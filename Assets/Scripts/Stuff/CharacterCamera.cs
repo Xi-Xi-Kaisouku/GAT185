@@ -12,10 +12,21 @@ public class CharacterCamera : MonoBehaviour
 
     float pitch;
     float yaw;
+    float distance = 3;
+
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+    }
 
     void LateUpdate()
     {
-        Vector3 targetPosition = targetTransform.position + (targetTransform.rotation * offset);
+        Quaternion rotationBase = targetTransform.rotation;
+        Quaternion rotation = rotationBase * Quaternion.AngleAxis(yaw, Vector3.up) * Quaternion.AngleAxis(pitch, Vector3.right);
+
+        Vector3 targetPosition = targetTransform.position + (rotation * (Vector3.back * distance));
+        //Vector3 targetPosition = targetTransform.position + (targetTransform.rotation * offset);
 
         Ray ray = new Ray(targetTransform.position, (transform.position - targetTransform.position));
         if (Physics.Raycast(ray, out RaycastHit raycastHit))
@@ -32,11 +43,26 @@ public class CharacterCamera : MonoBehaviour
     public void OnPitch(InputAction.CallbackContext callbackContext)
     {
         pitch += callbackContext.ReadValue<float>();
-        Debug.Log(pitch);
+        pitch = Mathf.Clamp(pitch, 0, 60);
     }
 
     public void OnYaw(InputAction.CallbackContext callbackContext)
     {
         yaw += callbackContext.ReadValue<float>();
+        yaw = Mathf.Clamp(yaw, -70, 70);
+    }
+
+    public void OnDistance(InputAction.CallbackContext callbackContext)
+    {
+        distance += callbackContext.ReadValue<float>();
+        distance = Mathf.Clamp(distance, 3, 12);
+    }
+
+    public void OnCenter(InputAction.CallbackContext callbackContext)
+    {
+        if(callbackContext.started)
+        {
+            yaw = 0;
+        }
     }
 }
